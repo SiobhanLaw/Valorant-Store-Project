@@ -1,0 +1,188 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerTitle {
+    margin: 0px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.headerDescription {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headerDescriptionLink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+a.headerDescriptionLink:hover {
+    color: rgb(131, 0, 102);
+}
+
+.skinContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.featuredContainer {
+    width: 80%;
+}
+
+.featured {
+    position: relative;
+    margin: 10px;
+    height: 450px;
+    background-image: url("../images/cartoon.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+.offersContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.offer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+    align-items: center;
+}
+
+.offerCostContainer {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.offerEditionLogo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.offerPrice {
+    margin: 0px;
+    font-size: 30px;
+    color: white;
+    margin-right: 5px;
+}
+
+.offerName {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.bundleInfo {
+    color: WHITE;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.bundleInfoRow { 
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+.bundleInfoRowFeatured {
+    margin: 0px;
+    padding-right: 10px;
+}
+
+.bundleInfoRowTimer {
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.bundleInfoRowBundleName {
+    margin: 0px;
+}
+
+.bundleInfoRowCollectionTitle {
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.costInfo {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 186, 248);
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+p.costInfoPrice:hover {
+    color: gold;
+}
+
+.costInfoImage {
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+}
+
+.costInfoPrice {
+    margin: 0px;
+    color: white;
+    padding-left: 5px;
+    font-size: 40px;
+}
+
+.offersInfoContainer { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.offersTitle {
+    margin: 0px;
+    padding-right: 10px;
+}
+
+.offersTimer {
+    margin: 0px;
+    padding-left: 10px;
+}

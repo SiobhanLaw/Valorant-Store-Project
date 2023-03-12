@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    margin: 0px;
+    margin-top: 40px;
+}
+
+.nightMarketDescription {
+    color: white
+}
+
+.timerTitle {
+    color: white;
+    font-size: 15px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-weight: bold;
+}
+
+.nightMarketItems {
+    display: flex;
+    flex-direction: row;
+}
+
+.nightMarketItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.nightMarketTopRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nightMarketTopRowDiscountPercentage {
+    color: red;
+}
+
+.nightMarketTopRowDiscountContainer {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.costInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.costInfoImage {
+    width: 20px;
+    height: 20px;
+}
+
+.costInfoPrice {
+    margin: 0px;
+    color: white;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.nightMarketTopRowDiscountedPrice {
+    color: red;
+    margin: 0px;
+}
+
+.nightMarketBottomRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nightMarketBottomRowItemName {
+    color: white;
+    font-weight: 600;
+}
+
+.nightMarketItemEditionImage {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+}

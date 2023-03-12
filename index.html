@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/shared.css" rel="stylesheet" />
+    <title>Valorant Store</title>
+    <script>
+      var countDownDate = new Date();
+      countDownDate.setDate(countDownDate.getDate() + 7);
+
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate.getTime() - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("storeTime").innerHTML =
+          days + ":" + hours + ":" + minutes + ":" + seconds;
+        document.getElementById("offersTime").innerHTML =
+          days + ":" + hours + ":" + minutes + ":" + seconds;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("storeTime").innerHTML = "EXPIRED";
+          document.getElementById("offersTime").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </head>
+
+  <body class="body">
+    <nav class="nav">
+      <a href="./index.html" class="navButtonRegular">Store</a>
+      <img
+        src="./images/valorant-logo.webp"
+        alt="valorant logo"
+        class="navLogo"
+      />
+      <a href="./pages/night.html" class="navButtonRegular">Night Market</a>
+    </nav>
+    <div class="header">
+      <h1 class="headerTitle">Valorant Store</h1>
+      <p class="headerDescription">
+        This is where you can customise your collection to match your
+        personality.<br />
+        Valorant points are available to purchase via paypal. For more
+        information visit the
+        <a
+          class="headerDescriptionLink"
+          href="https://playvalorant.com/en-gb/"
+          target="_blank"
+          >Valorant website</a
+        >.
+      </p>
+    </div>
+    <div class="skinContainer">
+      <div class="featuredContainer">
+        <div class="featured">
+          <div class="bundleInfo">
+            <div class="bundleInfoRow">
+              <h3 class="bundleInfoRowFeatured">FEATURED</h3>
+              <div>|</div>
+              <p class="bundleInfoRowTimer" id="storeTime"></p>
+            </div>
+            <h1 class="bundleInfoRowBundleName">RADIANT CRISIS 001</h1>
+            <p class="bundleInfoRowCollectionTitle">COLLECTION</p>
+          </div>
+          <a
+            class="costInfo"
+            href="https://www.paypal.com/signin"
+            target="_blank"
+          >
+            <img
+              src="./images/Valorant_Points.webp"
+              alt="valorant points logo"
+              class="costInfoImage"
+            />
+            <div>
+              <p class="costInfoPrice">7100</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="offersInfoContainer">
+        <h3 class="offersTitle">OFFERS</h3>
+        <div>|</div>
+        <p class="offersTimer" id="offersTime"></p>
+      </div>
+      <div class="offersContainer">
+        <div class="offer" id="exclusiveOffer">
+          <div class="offerCostContainer">
+            <img
+              src="./images/Valorant_Points.webp"
+              alt="valorant points logo"
+              class="offerEditionLogo"
+            />
+            <p class="offerPrice">2175</p>
+            <img
+              src="./images/Exclusive-edition-icon.webp"
+              class="offerEditionLogo"
+            />
+          </div>
+          <img
+            src="./images/Glitchpop_Frenzy.webp"
+            alt="glitchpop frenzy"
+            class="offerImage"
+          />
+          <p class="offerName">Glitchpop Frenzy</p>
+        </div>
+        <div class="offer" id="exclusiveOffer">
+          <div class="offerCostContainer">
+            <img
+              src="./images/Valorant_Points.webp"
+              alt="valorant points logo"
+              class="offerEditionLogo"
+            />
+            <p class="offerPrice">2175</p>
+            <img
+              src="./images/Exclusive-edition-icon.webp"
+              class="offerEditionLogo"
+            />
+          </div>
+          <img
+            src="./images/Glitchpop_Classic.webp"
+            alt="glitchpop classic"
+            class="offerImage"
+          />
+          <p class="offerName">Glitchpop Classic</p>
+        </div>
+        <div class="offer" id="premiumOffer">
+          <div class="offerCostContainer">
+            <img
+              src="./images/Valorant_Points.webp"
+              alt="valorant points logo"
+              class="offerEditionLogo"
+            />
+            <p class="offerPrice">2377</p>
+            <img
+              src="./images/Premium-edition-icon.webp"
+              class="offerEditionLogo"
+            />
+          </div>
+          <img
+            src="./images/arcane-sheriff_valorant_full_skin_154734.webp"
+            alt="arcane sheriff"
+            class="offerImage"
+          />
+          <p class="offerName">Arcane Sheriff</p>
+        </div>
+        <div class="offer" id="selectOffer">
+          <div class="offerCostContainer">
+            <img
+              src="./images/Valorant_Points.webp"
+              alt="valorant points logo"
+              class="offerEditionLogo"
+            />
+            <p class="offerPrice">1275</p>
+            <img
+              src="./images/Select-edition-icon.webp"
+              class="offerEditionLogo"
+            />
+          </div>
+          <img
+            src="./images/Sakura_Sheriff.webp"
+            alt="sakura sheriff"
+            class="offerImage"
+          />
+          <p class="offerName">Sakura Sheriff</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

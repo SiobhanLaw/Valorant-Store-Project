@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/night.css" rel="stylesheet" />
+    <link href="../css/shared.css" rel="stylesheet" />
+    <title>Valorant Night Market</title>
+    <script>
+      var countDownDate = new Date();
+      countDownDate.setDate(countDownDate.getDate() + 12);
+
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate.getTime() - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("nightMarketTimer").innerHTML =
+          days + ":" + hours + ":" + minutes + ":" + seconds;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("nightMarketTimer").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </head>
+
+  <body class="body">
+    <nav class="nav">
+      <a href="../index.html" class="navButtonRegular">Store</a>
+      <img
+        src="../images/valorant-logo.webp"
+        alt="valorant logo"
+        class="navLogo"
+      />
+      <a href="../pages/night.html" class="navButtonRegular">Night Market</a>
+    </nav>
+    <div class="container">
+      <h2 class="title">NIGHT.MARKET</h2>
+      <p class="nightMarketDescription">
+        Welcome to your Night Market, where you can find exclsuive discounts
+        just for you.
+      </p>
+      <p class="timerTitle">
+        ENDS IN <span class="timer" id="nightMarketTimer">12 DAYS</span>
+      </p>
+      <div class="nightMarketItems">
+        <div class="nightMarketItem" id="selectOffer">
+          <div class="nightMarketTopRow">
+            <p class="nightMarketTopRowDiscountPercentage">-10%</p>
+            <div class="nightMarketTopRowDiscountContainer">
+              <p class="nightMarketTopRowDiscountedPrice">1775</p>
+              <div class="costInfo">
+                <img
+                  src="../images/Valorant_Points.webp"
+                  alt="valorant points logo"
+                  class="costInfoImage"
+                />
+                <p class="costInfoPrice">1598</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="../images/Oni_Bulldog_Hana.webp"
+            alt="Oni bulldog"
+            class="offerImage"
+          />
+          <div class="nightMarketBottomRow">
+            <p class="nightMarketBottomRowItemName">Oni<br />Bulldog</p>
+            <img
+              src="../images/Select-edition-icon.webp"
+              class="nightMarketItemEditionImage"
+            />
+          </div>
+        </div>
+        <div class="nightMarketItem" id="deluxeOffer">
+          <div class="nightMarketTopRow">
+            <p class="nightMarketTopRowDiscountPercentage">-20%</p>
+            <div class="nightMarketTopRowDiscountContainer">
+              <p class="nightMarketTopRowDiscountedPrice">1775</p>
+              <div class="costInfo">
+                <img
+                  src="../images/Valorant_Points.webp"
+                  alt="valorant points logo"
+                  class="costInfoImage"
+                />
+                <p class="costInfoPrice">1420</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="../images/Celestial_Ares.webp"
+            alt="celstial ares"
+            class="offerImage"
+          />
+          <div class="nightMarketBottomRow">
+            <p class="nightMarketBottomRowItemName">Celestial<br />Ares</p>
+            <img
+              src="../images/Deluxe-edition-icon.webp"
+              class="nightMarketItemEditionImage"
+            />
+          </div>
+        </div>
+        <div class="nightMarketItem" id="selectOffer">
+          <div class="nightMarketTopRow">
+            <p class="nightMarketTopRowDiscountPercentage">-20%</p>
+            <div class="nightMarketTopRowDiscountContainer">
+              <p class="nightMarketTopRowDiscountedPrice">2675</p>
+              <div class="costInfo">
+                <img
+                  src="../images/Valorant_Points.webp"
+                  alt="valorant points logo"
+                  class="costInfoImage"
+                />
+                <p class="costInfoPrice">2140</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="../images/SPECTRUM_Phantom_Purple-Pink.webp"
+            alt="spectrum phantom"
+            class="offerImage"
+          />
+          <div class="nightMarketBottomRow">
+            <p class="nightMarketBottomRowItemName">Spectrum<br />Phantom</p>
+            <img
+              src="../images/Select-edition-icon.webp"
+              class="nightMarketItemEditionImage"
+            />
+          </div>
+        </div>
+        <div class="nightMarketItem" id="premiumOffer">
+          <div class="nightMarketTopRow">
+            <p class="nightMarketTopRowDiscountPercentage">-20%</p>
+            <div class="nightMarketTopRowDiscountContainer">
+              <p class="nightMarketTopRowDiscountedPrice">2475</p>
+              <div class="costInfo">
+                <img
+                  src="../images/Valorant_Points.webp"
+                  alt="valorant points logo"
+                  class="costInfoImage"
+                />
+                <p class="costInfoPrice">1980</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="../images/Elderflame_Frenzy.webp"
+            alt="elderflame"
+            class="offerImage"
+          />
+          <div class="nightMarketBottomRow">
+            <p class="nightMarketBottomRowItemName">Elderflame<br />Frenzy</p>
+            <img
+              src="../images/Premium-edition-icon.webp"
+              class="nightMarketItemEditionImage"
+            />
+          </div>
+        </div>
+        <div class="nightMarketItem" id="selectOffer">
+          <div class="nightMarketTopRow">
+            <p class="nightMarketTopRowDiscountPercentage">-10%</p>
+            <div class="nightMarketTopRowDiscountContainer">
+              <p class="nightMarketTopRowDiscountedPrice">2175</p>
+              <div class="costInfo">
+                <img
+                  src="../images/Valorant_Points.webp"
+                  alt="valorant points logo"
+                  class="costInfoImage"
+                />
+                <p class="costInfoPrice">1958</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="../images/BlastX_Odin.webp"
+            alt="blastX"
+            class="offerImage"
+          />
+          <div class="nightMarketBottomRow">
+            <p class="nightMarketBottomRowItemName">BlastX<br />Odin</p>
+            <img
+              src="../images/Select-edition-icon.webp"
+              class="nightMarketItemEditionImage"
+            />
+          </div>
+        </div>
+        <div class="nightMarketItem" id="exclusiveOffer">
+          <div class="nightMarketTopRow">
+            <p class="nightMarketTopRowDiscountPercentage">-20%</p>
+            <div class="nightMarketTopRowDiscountContainer">
+              <p class="nightMarketTopRowDiscountedPrice">1775</p>
+              <div class="costInfo">
+                <img
+                  src="../images/Valorant_Points.webp"
+                  alt="valorant points logo"
+                  class="costInfoImage"
+                />
+                <p class="costInfoPrice">1420</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="../images/Prime_Spectre.webp"
+            alt="prime spectre"
+            class="offerImage"
+          />
+          <div class="nightMarketBottomRow">
+            <p class="nightMarketBottomRowItemName">Prime<br />Spectre</p>
+            <img
+              src="../images/Exclusive-edition-icon.webp"
+              class="nightMarketItemEditionImage"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
